@@ -97,7 +97,7 @@
 
 
   <meta name="description" content="First blog isn’t about a touching taleI’d just like to share the steps I’ve taken to set up this simple but very handy personal blog.  There is going to be three main sections of this blog  Set up blo">
-<meta name="keywords" content="Fullstack development">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Set Up and Publish a Personal Blog in 15 Mins">
 <meta property="og:url" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/index.html">
@@ -107,7 +107,9 @@
 <meta property="og:image" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/create-github-io.jpg">
 <meta property="og:image" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/io-setting.jpg">
 <meta property="og:image" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/io-domain.jpg">
-<meta property="og:updated_time" content="2019-04-15T11:31:50.838Z">
+<meta property="og:image" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/custom-domain.jpg">
+<meta property="og:image" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/add-domain-to-io.jpg">
+<meta property="og:updated_time" content="2019-04-15T11:50:43.052Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Set Up and Publish a Personal Blog in 15 Mins">
 <meta name="twitter:description" content="First blog isn’t about a touching taleI’d just like to share the steps I’ve taken to set up this simple but very handy personal blog.  There is going to be three main sections of this blog  Set up blo">
@@ -412,6 +414,24 @@
           </span>
        
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -518,7 +538,18 @@ Code to deploy
  scroll down to this section<img src="/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/io-domain.jpg" title="This is an example image">
  If you see something similar, great, it should be done. Just click on the link and go to your own blog.</li>
 </ol>
-
+<hr>
+<h3 id="Use-your-custom-domain-name-with-github-io"><a href="#Use-your-custom-domain-name-with-github-io" class="headerlink" title="Use your custom domain name with github.io"></a>Use your custom domain name with github.io</h3><p>Using custom domain name with github got a lot easier now, and github.io even enforces https for us and no charge.<br>What we need to do is below</p>
+<ol>
+<li>Go to your domain provider, in my case, nameCheap.com</li>
+<li>Go to DNS management section (name can vary from provides), on nameCheap.com it’s called Advanced DNS…really?</li>
+<li>Add below four A records and one CNAME record<img src="/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/custom-domain.jpg" title="This is an example image">
+<h4 id="Note-Double-check-if-there-is-any-other-A-or-CNAME-record-which-may-affect-your-github-domain-name-binding"><a href="#Note-Double-check-if-there-is-any-other-A-or-CNAME-record-which-may-affect-your-github-domain-name-binding" class="headerlink" title="Note: Double check if there is any other A or CNAME record, which may affect your github-domain name binding"></a>Note: Double check if there is any other A or CNAME record, which may affect your github-domain name binding</h4></li>
+<li>Go back to your github.io setting, and add your custom domain name<br> For example: binarytellsnotales.com</li>
+</ol>
+<img src="/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/add-domain-to-io.jpg" title="This is an example image">
+<p>If you see any error messages, it’s possibly caused by DNS delay, which may take up to 24 hours to be reflected.</p>
+<h2 id="I-guess-this-is-it-for-now-if-any-question-or-feedback-please-feel-free-to-leave-a-comment"><a href="#I-guess-this-is-it-for-now-if-any-question-or-feedback-please-feel-free-to-leave-a-comment" class="headerlink" title="I guess this is it for now, if any question or feedback, please feel free to leave a comment."></a>I guess this is it for now, if any question or feedback, please feel free to leave a comment.</h2>
       
     </div>
 
@@ -539,11 +570,33 @@ Code to deploy
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
+      
 
       
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/15/chainable-bem-modifier/" rel="prev" title="Chainable Bem Modifier">
+                Chainable Bem Modifier <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -607,7 +660,7 @@ Code to deploy
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -626,7 +679,11 @@ Code to deploy
                     
                       
                     
-                    <span class="site-state-item-count">0</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -645,7 +702,9 @@ Code to deploy
                     
                       
                     
-                    <span class="site-state-item-count">0</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
