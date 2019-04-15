@@ -105,7 +105,9 @@
 <meta property="og:description" content="First blog isn’t about a touching taleI’d just like to share the steps I’ve taken to set up this simple but very handy personal blog.  There is going to be three main sections of this blog  Set up blo">
 <meta property="og:locale" content="English">
 <meta property="og:image" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/create-github-io.jpg">
-<meta property="og:updated_time" content="2019-04-15T11:14:40.254Z">
+<meta property="og:image" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/io-setting.jpg">
+<meta property="og:image" content="http://binarytellsnotales.com/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/io-domain.jpg">
+<meta property="og:updated_time" content="2019-04-15T11:31:50.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Set Up and Publish a Personal Blog in 15 Mins">
 <meta name="twitter:description" content="First blog isn’t about a touching taleI’d just like to share the steps I’ve taken to set up this simple but very handy personal blog.  There is going to be three main sections of this blog  Set up blo">
@@ -495,11 +497,27 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> <span class="built_in">type</span>: git</span><br><span class="line"> repo: https://github.com/YOURGITHUBREPO/YOURGITHUBNAME.github.io.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Everytime before publishing, we need to run generate command.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p> I normally run the command below quite often just to clean up and generate final files</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Second last step, publish to github.io</p>
+<p> Before we proceed, you may want to check your git command line config.</p>
 </li>
 </ol>
-<p><b>Tip</b>: I normally run the command below quite often just to clean up and generate final files<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure></p>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name</span><br><span class="line">$ git config --global user.email</span><br></pre></td></tr></table></figure>
+<pre><code>make sure the outputs are same as your github account info
+
+If you haven&apos;t set it up properly, please see [this](https://help.github.com/en/articles/setting-your-commit-email-address-in-git)
+
+Code to deploy
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<pre><code>The deployment may take a few seconds or minutes
+</code></pre><ol start="8">
+<li>Check your repo settings to make your github.io page live<br> Go to your repo setting page<img src="/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/io-setting.jpg" title="This is an example image">
+ scroll down to this section<img src="/2019/04/15/Set-up-and-publish-a-personal-blog-in-15-mins/io-domain.jpg" title="This is an example image">
+ If you see something similar, great, it should be done. Just click on the link and go to your own blog.</li>
+</ol>
 
       
     </div>
