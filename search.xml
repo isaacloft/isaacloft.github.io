@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Prettier-Eslint-Cli Does Not Format Anything in Powershell</title>
+      <link href="/2019/05/01/prettier-eslint-cli-does-not-format-anything-in-powershell/"/>
+      <url>/2019/05/01/prettier-eslint-cli-does-not-format-anything-in-powershell/</url>
+      
+        <content type="html"><![CDATA[<h2 id="prettier-eslint-and-prettier-stylelint-work-inside-bash-and-zsh-not-in-powershell-or-cmd"><a href="#prettier-eslint-and-prettier-stylelint-work-inside-bash-and-zsh-not-in-powershell-or-cmd" class="headerlink" title="prettier-eslint and prettier-stylelint work inside bash and zsh, not in powershell or cmd"></a>prettier-eslint and prettier-stylelint work inside bash and zsh, not in powershell or cmd</h2><p>Long story short, I’ve set up eslint and stylelint for one project weeks back and everything ran perfectly on MACs, until we ran it inside powershell and cmd, it output nothing. It almost felt like no file is to be formatted.</p><p>Scripts we had inside package.json<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">    "fix-style": "prettier-stylelint --write 'src/**/*.&#123;css,scss&#125;' ",</span><br><span class="line">    "fix-code": "prettier-eslint --write 'src/**/*.&#123;js,jsx&#125;' "</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><a id="more"></a><p>After a couple hours of research, I accidentally saw this code on <a href="https://github.com/prettier/prettier-eslint-cli" target="_blank" rel="noopener">prettier-eslint-cli</a>, and I gave it a go. It worked..<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">   "format": "prettier-eslint \"src/**/*.js\""</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p><p>Turns out, nothing wrong with dependencies, neither plugins in vscode. It just in powershell, double quote and single quote have different functions. Still not 100% sure, but it is very likely to relate to this <a href="https://devblogs.microsoft.com/scripting/weekend-scripter-understanding-quotation-marks-in-powershell/" target="_blank" rel="noopener">topic</a></p><p>To fix this issue, we simply updated the script to<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"fix-style"</span>: <span class="string">"prettier-stylelint --write \"src/**/*.&#123;css,scss&#125;\" "</span>,</span><br><span class="line"><span class="string">"fix-code"</span>: <span class="string">"prettier-eslint --write \"src/**/*.&#123;js,jsx&#125;\" "</span></span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> frontend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> eslint </tag>
+            
+            <tag> prettier </tag>
+            
+            <tag> vscode </tag>
+            
+            <tag> powershell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Integrate Prettier With Stylelint in VSCode</title>
       <link href="/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/"/>
       <url>/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/</url>
