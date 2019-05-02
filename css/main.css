@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #ff0fff;
 }
 .feed-link,
 .chat {
@@ -2748,4 +2748,22 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.post-title a {
+  color: #2d5a8e !important;
+  font-weight: 600 !important;
+}
+.posts-expand .post-title-link::before {
+  background-color: #2d5a8e !important;
+}
+.btn {
+  color: #2d5a8e;
+  font-weight: 600;
+  background: none;
+  border-color: #2d5a8e !important;
+}
+.btn:hover {
+  color: #f4f4f3;
+  border-color: #f4f4f3;
+  background: #2d5a8e;
 }
