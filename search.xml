@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Use Media Query Selector: Prefers-Reduced-Motion to Improve Accessibility</title>
+      <link href="/2019/05/02/Use-Media-Query-Selector-prefers-reduced-motion-to-improve-accessibility/"/>
+      <url>/2019/05/02/Use-Media-Query-Selector-prefers-reduced-motion-to-improve-accessibility/</url>
+      
+        <content type="html"><![CDATA[<h2 id="This-article-is-more-of-a-FYI-for-myself-as-the-google-doc-is-very-thorough"><a href="#This-article-is-more-of-a-FYI-for-myself-as-the-google-doc-is-very-thorough" class="headerlink" title="This article is more of a FYI for myself as the google doc is very thorough."></a>This article is more of a FYI for myself as the google doc is very thorough.</h2><p>Articles I found useful: </p><ol><li><a href="https://developers.google.com/web/updates/2019/03/prefers-reduced-motion" target="_blank" rel="noopener">On Google Developer Doc</a></li><li><a href="https://css-tricks.com/introduction-reduced-motion-media-query/" target="_blank" rel="noopener">CSS tricks</a></li></ol><a id="more"></a><h3 id="Long-story-short"><a href="#Long-story-short" class="headerlink" title="Long story short"></a>Long story short</h3><p>One simple implementation:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  If the user has expressed their preference for</span></span><br><span class="line"><span class="comment">  reduced motion, then don't use animations on buttons.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">@<span class="keyword">media</span> (prefers-reduced-motion: reduce) &#123;</span><br><span class="line">  <span class="selector-tag">button</span> &#123;</span><br><span class="line">    <span class="attribute">animation</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  If the browser understands the media query and the user</span></span><br><span class="line"><span class="comment">  explicitly hasn't set a preference, then use animations on buttons.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">@<span class="keyword">media</span> (prefers-reduced-motion: no-preference) &#123;</span><br><span class="line">  <span class="selector-tag">button</span> &#123;</span><br><span class="line">    <span class="comment">/* `vibrate` keyframes are defined elsewhere */</span></span><br><span class="line">    <span class="attribute">animation</span>: vibrate <span class="number">0.3s</span> linear infinite both;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="To-test-this-we-have-to-enable-accessibility-feature-on-devices-such-as-on-Mac-gt-Accessibility-gt-Display-gt-Reduce-Motion"><a href="#To-test-this-we-have-to-enable-accessibility-feature-on-devices-such-as-on-Mac-gt-Accessibility-gt-Display-gt-Reduce-Motion" class="headerlink" title="To test this, we have to enable accessibility feature on devices, such as on Mac -&gt; Accessibility -&gt; Display -&gt; Reduce Motion"></a>To test this, we have to enable accessibility feature on devices, such as on Mac -&gt; Accessibility -&gt; Display -&gt; Reduce Motion</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> frontend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> frontend </tag>
+            
+            <tag> accessibility </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Prettier-Eslint-Cli Does Not Format Anything in Powershell</title>
       <link href="/2019/05/01/prettier-eslint-cli-does-not-format-anything-in-powershell/"/>
       <url>/2019/05/01/prettier-eslint-cli-does-not-format-anything-in-powershell/</url>
