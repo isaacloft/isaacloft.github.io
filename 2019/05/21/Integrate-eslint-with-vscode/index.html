@@ -140,21 +140,18 @@
 
 
 
-  <meta name="description" content="With VSCode, intergrate stylelint is super easy, just follow steps below and you’re all set.Install vscode extensionsThere are two required vscode extensions:  prettier stylelint  Install packagesChoo">
+  <meta name="description" content="1. Set up project with eslintReference articles  set up eslint set up prettier-eslint  Demo code for configuration below Install eslint dependencies12345678910npm install --save-dev \eslint \babel-esl">
 <meta name="keywords" content="tools">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Integrate Prettier With Stylelint in VSCode">
-<meta property="og:url" content="http://binarytellsnotales.com/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/index.html">
+<meta property="og:title" content="Integrate Eslint With Vscode">
+<meta property="og:url" content="http://binarytellsnotales.com/2019/05/21/Integrate-eslint-with-vscode/index.html">
 <meta property="og:site_name" content="Binary Tells No Tales">
-<meta property="og:description" content="With VSCode, intergrate stylelint is super easy, just follow steps below and you’re all set.Install vscode extensionsThere are two required vscode extensions:  prettier stylelint  Install packagesChoo">
+<meta property="og:description" content="1. Set up project with eslintReference articles  set up eslint set up prettier-eslint  Demo code for configuration below Install eslint dependencies12345678910npm install --save-dev \eslint \babel-esl">
 <meta property="og:locale" content="English">
-<meta property="og:image" content="http://binarytellsnotales.com/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/format-on-save.jpg">
-<meta property="og:image" content="http://binarytellsnotales.com/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/use-stylelint.jpg">
-<meta property="og:updated_time" content="2019-05-02T01:17:28.062Z">
+<meta property="og:updated_time" content="2019-05-21T00:49:05.465Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Integrate Prettier With Stylelint in VSCode">
-<meta name="twitter:description" content="With VSCode, intergrate stylelint is super easy, just follow steps below and you’re all set.Install vscode extensionsThere are two required vscode extensions:  prettier stylelint  Install packagesChoo">
-<meta name="twitter:image" content="http://binarytellsnotales.com/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/format-on-save.jpg">
+<meta name="twitter:title" content="Integrate Eslint With Vscode">
+<meta name="twitter:description" content="1. Set up project with eslintReference articles  set up eslint set up prettier-eslint  Demo code for configuration below Install eslint dependencies12345678910npm install --save-dev \eslint \babel-esl">
 
 
 
@@ -162,7 +159,7 @@
 
   
   
-  <link rel="canonical" href="http://binarytellsnotales.com/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/">
+  <link rel="canonical" href="http://binarytellsnotales.com/2019/05/21/Integrate-eslint-with-vscode/">
 
 
 
@@ -172,7 +169,7 @@
   };
 </script>
 
-  <title>Integrate Prettier With Stylelint in VSCode | Binary Tells No Tales</title>
+  <title>Integrate Eslint With Vscode | Binary Tells No Tales</title>
   
 
 
@@ -411,7 +408,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://binarytellsnotales.com/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/">
+    <link itemprop="mainEntityOfPage" href="http://binarytellsnotales.com/2019/05/21/Integrate-eslint-with-vscode/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Isaac Guan">
@@ -428,7 +425,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Integrate Prettier With Stylelint in VSCode
+          <h2 class="post-title" itemprop="name headline">Integrate Eslint With Vscode
 
               
             
@@ -454,7 +451,7 @@
                 
               
 
-              <time title="Created: 2019-04-16 11:04:36" itemprop="dateCreated datePublished" datetime="2019-04-16T11:04:36+10:00">2019-04-16</time>
+              <time title="Created: 2019-05-21 09:56:27" itemprop="dateCreated datePublished" datetime="2019-05-21T09:56:27+10:00">2019-05-21</time>
 
             
 
@@ -473,7 +470,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tooling/" itemprop="url" rel="index"><span itemprop="name">tooling</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a></span>
 
                 
                 
@@ -492,8 +489,8 @@
                 </span>
             
                 <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/" itemprop="commentCount"></span>
+                <a href="/2019/05/21/Integrate-eslint-with-vscode/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/21/Integrate-eslint-with-vscode/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -528,41 +525,27 @@
       
 
       
-        <h4 id="With-VSCode-intergrate-stylelint-is-super-easy-just-follow-steps-below-and-you’re-all-set"><a href="#With-VSCode-intergrate-stylelint-is-super-easy-just-follow-steps-below-and-you’re-all-set" class="headerlink" title="With VSCode, intergrate stylelint is super easy, just follow steps below and you’re all set."></a>With VSCode, intergrate stylelint is super easy, just follow steps below and you’re all set.</h4><h4 id="Install-vscode-extensions"><a href="#Install-vscode-extensions" class="headerlink" title="Install vscode extensions"></a>Install vscode extensions</h4><p>There are two required vscode extensions:</p>
-<ol>
-<li>prettier</li>
-<li>stylelint</li>
-</ol>
-<h4 id="Install-packages"><a href="#Install-packages" class="headerlink" title="Install packages"></a>Install packages</h4><p>Choose your favorite package manager and install dependecies like below<br><span class="exturl" data-url="aHR0cHM6Ly93d3cubnBtanMuY29tL3BhY2thZ2Uvc3R5bGVsaW50LWNvbmZpZy1zdGFuZGFyZA==" title="https://www.npmjs.com/package/stylelint-config-standard">stylelint-config-standard<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cubnBtanMuY29tL3BhY2thZ2UvcHJldHRpZXItc3R5bGVsaW50" title="https://www.npmjs.com/package/prettier-stylelint">prettier-stylelint<i class="fa fa-external-link"></i></span></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add prettier-stylelint stylelint-config-standard --dev</span><br></pre></td></tr></table></figure>
-<p>stylelint-config-standard is just one of many stylint configurations, you can use any ones you prefer. </p>
+        <h3 id="1-Set-up-project-with-eslint"><a href="#1-Set-up-project-with-eslint" class="headerlink" title="1. Set up project with eslint"></a>1. Set up project with eslint</h3><p><b>Reference articles</b></p>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2NvbXBhcmV0aGVtYXJrZXQvZXNsaW50LXZpc3VhbC1zdHVkaW8tY29kZS1lZGl0b3ItaW50ZWdyYXRpb24tZm9yLXRoZS13aW4tMWJjZjM4ZjZjY2Q0" title="https://medium.com/comparethemarket/eslint-visual-studio-code-editor-integration-for-the-win-1bcf38f6ccd4">set up eslint<i class="fa fa-external-link"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uZnJlZWNvZGVjYW1wLm9yZy9pbnRlZ3JhdGluZy1wcmV0dGllci13aXRoLWVzbGludC1hbmQtc3R5bGVsaW50LTk5ZTc0ZmVkZTMzZg==" title="https://medium.freecodecamp.org/integrating-prettier-with-eslint-and-stylelint-99e74fede33f">set up prettier-eslint<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lzYWFjbG9mdC9lc2xpbnQtaW50ZWdyYXRpb24tdnNjb2Rl" title="https://github.com/isaacloft/eslint-integration-vscode">Demo code<i class="fa fa-external-link"></i></span> for configuration below</p>
+<h4 id="Install-eslint-dependencies"><a href="#Install-eslint-dependencies" class="headerlink" title="Install eslint dependencies"></a>Install eslint dependencies</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev \</span><br><span class="line">eslint \</span><br><span class="line">babel-eslint \</span><br><span class="line">eslint-config-airbnb \</span><br><span class="line">eslint-config-babel \</span><br><span class="line">eslint-config-prettier \</span><br><span class="line">eslint-plugin-import \</span><br><span class="line">eslint-plugin-react \</span><br><span class="line">prettier \</span><br><span class="line">eslint-plugin-prettier</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h4 id="Create-stylelintrc-and-prettierrc-files-at-the-root-of-your-project"><a href="#Create-stylelintrc-and-prettierrc-files-at-the-root-of-your-project" class="headerlink" title="Create .stylelintrc and .prettierrc files at the root of your project"></a>Create .stylelintrc and .prettierrc files at the root of your project</h4><p>.stylelintrc file should look at least like this<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="string">"extends"</span>:<span class="string">"stylelint-config-standard"</span>,</span><br><span class="line">    // extends is the configuration package we installed,</span><br><span class="line">    // you can choose your own configuration package and update here</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>.prettierrc file looks like this<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   // <span class="string">"printWidth"</span>: 100,</span><br><span class="line">   // <span class="string">"singleQuote"</span>: <span class="literal">true</span>,</span><br><span class="line">   // <span class="string">"trailingComma"</span>: <span class="string">"all"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>You can leave as an empty object or define more personal settings in here, your vscode prettier extension is going to pick those<br>up and use with stylelint configurations.</p>
-<h4 id="Update-your-vscode-extension-settings"><a href="#Update-your-vscode-extension-settings" class="headerlink" title="Update your vscode extension settings"></a>Update your vscode extension settings</h4><ol>
-<li><p>Go to your vscode setting and navigate to text-editor section and click on formatting, then tick format on save option.</p>
-<img src="/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/format-on-save.jpg" title="This is an example image">
-</li>
-<li><p>Go to vscode setting and navigate to extension section, find your prettier tab and click on it.<br>Scroll down the settings and find this option and tick.</p>
-<img src="/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/use-stylelint.jpg" title="This is an example image">
-</li>
-</ol>
-<p>This should be it! Go mess up one css or scss file and save it, you should see the file being formatted on saving.</p>
-<h4 id="Before-wrap-it-up"><a href="#Before-wrap-it-up" class="headerlink" title="Before wrap it up"></a>Before wrap it up</h4><p>It would be nice for us to setup a script to format all existing files.</p>
-<p>Add script to your package.json<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">   <span class="string">"start"</span>: <span class="string">"react-scripts start"</span>,</span><br><span class="line">   <span class="string">"build"</span>: <span class="string">"react-scripts build"</span>,</span><br><span class="line">   <span class="string">"test"</span>: <span class="string">"react-scripts test"</span>,</span><br><span class="line">   <span class="string">"eject"</span>: <span class="string">"react-scripts eject"</span>,</span><br><span class="line">   <span class="string">"fix-styles"</span>: <span class="string">"prettier-stylelint --write 'src/**/*.&#123;css,scss&#125;' "</span></span><br><span class="line">   //You can update your directory <span class="keyword">if</span> it needs to</span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure></p>
-<p>Now if open your project terminal and run below<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn fix-styles // or npm fix-styles</span><br></pre></td></tr></table></figure></p>
-<p>You should have all your css and scss files formatted.</p>
-<h4 id="Optional-but-useful"><a href="#Optional-but-useful" class="headerlink" title="Optional but useful"></a>Optional but useful</h4><p>It’s likely that you have third party styling files inside your project, and you may not need to format these.<br>We can set up rules to ignore them. There are two options:</p>
-<ol>
-<li><p>In your .stylelintrc add ignoreFiles</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="string">"extends"</span>:<span class="string">"stylelint-config-standard"</span>,</span><br><span class="line">   <span class="string">"ignoreFiles"</span>: <span class="string">"./src/static/**"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Create .stylelintignore file in the root directory and then add routes you’d like to ignore (just like .gitignore)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./src/static/**</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>More information on how to configure your stylelint rules, <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3N0eWxlbGludC9zdHlsZWxpbnQvYmxvYi9tYXN0ZXIvZG9jcy91c2VyLWd1aWRlL2NvbmZpZ3VyYXRpb24ubWQ=" title="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md">here<i class="fa fa-external-link"></i></span></p>
+<h4 id="create-eslintrc-file-in-your-project-root"><a href="#create-eslintrc-file-in-your-project-root" class="headerlink" title="create .eslintrc file in your project root"></a>create .eslintrc file in your project root</h4><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"extends"</span>: [<span class="string">"airbnb"</span>, <span class="string">"plugin:prettier/recommended"</span>, <span class="string">"plugin:jsx-a11y/recommended"</span>],</span><br><span class="line">  <span class="attr">"plugins"</span>: [<span class="string">"prettier"</span>, <span class="string">"jsx-a11y"</span>],</span><br><span class="line">  <span class="attr">"parser"</span>: <span class="string">"babel-eslint"</span>,</span><br><span class="line">  <span class="attr">"env"</span>: &#123;</span><br><span class="line">    <span class="attr">"browser"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"commonjs"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"es6"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"jest"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"node"</span>: <span class="literal">true</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"rules"</span>: &#123;</span><br><span class="line">    <span class="attr">"react/prop-types"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"indent"</span>: [<span class="number">0</span>, <span class="string">"tab"</span>],</span><br><span class="line">    <span class="attr">"no-unused-expressions"</span>: <span class="string">"warn"</span>,</span><br><span class="line">    <span class="attr">"no-useless-concat"</span>: <span class="string">"warn"</span>,</span><br><span class="line">    <span class="attr">"block-scoped-var"</span>: <span class="string">"warn"</span>,</span><br><span class="line">    <span class="attr">"consistent-return"</span>: <span class="string">"warn"</span>,</span><br><span class="line">    <span class="attr">"no-invalid-this"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"react/jsx-filename-extension"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"arrow-body-style"</span>: [<span class="string">"warn"</span>, <span class="string">"as-needed"</span>],</span><br><span class="line">    <span class="attr">"import/no-named-as-default"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"import/no-named-as-default-member"</span>: <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Create-eslintignore-file-in-your-project-root"><a href="#Create-eslintignore-file-in-your-project-root" class="headerlink" title="Create .eslintignore file in your project root"></a>Create .eslintignore file in your project root</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">config/</span><br><span class="line">test/</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="2-Set-up-project-with-prettier-eslint"><a href="#2-Set-up-project-with-prettier-eslint" class="headerlink" title="2. Set up project with prettier-eslint"></a>2. Set up project with prettier-eslint</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev prettier-eslint prettier-eslint-cli</span><br></pre></td></tr></table></figure>
+<h4 id="Update-package-json-scripts"><a href="#Update-package-json-scripts" class="headerlink" title="Update package.json scripts"></a>Update package.json scripts</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">"lint": "eslint --fix src",</span><br><span class="line">"fix-code": "prettier-eslint --write 'src/**/*.&#123;js,jsx&#125;' "</span><br></pre></td></tr></table></figure>
+<h4 id="Configure-vscode-to-use-prettier-eslint"><a href="#Configure-vscode-to-use-prettier-eslint" class="headerlink" title="Configure vscode to use prettier-eslint"></a>Configure vscode to use prettier-eslint</h4><p>Configure a few VSCode settings:</p>
+<p>“prettier.eslintIntegration”: true — tells Prettier to use prettier-eslint instead of Prettier</p>
+<p>“prettier.stylelintIntegration”: true — tells Prettier to use prettier-stylelint instead of Prettier</p>
+<p>“eslint.autoFixOnSave”: false — we don’t need ESLint to fix our code for us directly, since prettier-eslint will be running eslint –fix for us anyways.</p>
+<p>“editor.formatOnSave”: true — runs Prettier with the above options on every file save, so you never have to manually invoke VSCode’s format command.</p>
+<p>Additionally, you can check-in the above workplace settings to source control so its easier for other team members to set up their editors. You can do so by creating a .vscode folder at the root of your project and putting all of the above rules in a settings.json file.</p>
+<h4 id="Optionally-set-up-prettierrc"><a href="#Optionally-set-up-prettierrc" class="headerlink" title="Optionally, set up .prettierrc"></a>Optionally, set up <span class="exturl" data-url="aHR0cHM6Ly9wcmV0dGllci5pby9kb2NzL2VuL2NvbmZpZ3VyYXRpb24uaHRtbA==" title="https://prettier.io/docs/en/configuration.html">.prettierrc<i class="fa fa-external-link"></i></span></h4><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"printWidth"</span>: <span class="number">100</span>,</span><br><span class="line">  <span class="attr">"singleQuote"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"trailingComma"</span>: <span class="string">"all"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Note: Even with eslint, it cannot fix everything for us.</p>
 
       
     </div>
@@ -599,8 +582,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/15/chainable-bem-modifier/" rel="next" title="Chainable Bem Modifier">
-                <i class="fa fa-chevron-left"></i> Chainable Bem Modifier
+              <a href="/2019/05/03/Code-Challenge-Conway-s-Game-of-Life/" rel="next" title="Code Challenge: Conway's Game of Life">
+                <i class="fa fa-chevron-left"></i> Code Challenge: Conway's Game of Life
               </a>
             
           </div>
@@ -608,10 +591,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/01/prettier-eslint-cli-does-not-format-anything-in-powershell/" rel="prev" title="Prettier-Eslint-Cli Does Not Format Anything in Powershell">
-                Prettier-Eslint-Cli Does Not Format Anything in Powershell <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -973,9 +952,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "http://binarytellsnotales.com/2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/";
-    this.page.identifier = "2019/04/16/Integrate-prettier-with-stylelint-in-VSCode/";
-    this.page.title = 'Integrate Prettier With Stylelint in VSCode';
+    this.page.url = "http://binarytellsnotales.com/2019/05/21/Integrate-eslint-with-vscode/";
+    this.page.identifier = "2019/05/21/Integrate-eslint-with-vscode/";
+    this.page.title = 'Integrate Eslint With Vscode';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');

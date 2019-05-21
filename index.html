@@ -408,6 +408,189 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://binarytellsnotales.com/2019/05/21/Integrate-eslint-with-vscode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Isaac Guan">
+      <meta itemprop="description" content="A blog for technical solutions and gotchas">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Binary Tells No Tales">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/21/Integrate-eslint-with-vscode/" class="post-title-link" itemprop="url">Integrate Eslint With Vscode</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-21 09:56:27" itemprop="dateCreated datePublished" datetime="2019-05-21T09:56:27+10:00">2019-05-21</time>
+
+            
+
+            
+          </span>
+       
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/05/21/Integrate-eslint-with-vscode/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/21/Integrate-eslint-with-vscode/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="1-Set-up-project-with-eslint"><a href="#1-Set-up-project-with-eslint" class="headerlink" title="1. Set up project with eslint"></a>1. Set up project with eslint</h3><p><b>Reference articles</b></p>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2NvbXBhcmV0aGVtYXJrZXQvZXNsaW50LXZpc3VhbC1zdHVkaW8tY29kZS1lZGl0b3ItaW50ZWdyYXRpb24tZm9yLXRoZS13aW4tMWJjZjM4ZjZjY2Q0" title="https://medium.com/comparethemarket/eslint-visual-studio-code-editor-integration-for-the-win-1bcf38f6ccd4">set up eslint<i class="fa fa-external-link"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uZnJlZWNvZGVjYW1wLm9yZy9pbnRlZ3JhdGluZy1wcmV0dGllci13aXRoLWVzbGludC1hbmQtc3R5bGVsaW50LTk5ZTc0ZmVkZTMzZg==" title="https://medium.freecodecamp.org/integrating-prettier-with-eslint-and-stylelint-99e74fede33f">set up prettier-eslint<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lzYWFjbG9mdC9lc2xpbnQtaW50ZWdyYXRpb24tdnNjb2Rl" title="https://github.com/isaacloft/eslint-integration-vscode">Demo code<i class="fa fa-external-link"></i></span> for configuration below</p>
+<h4 id="Install-eslint-dependencies"><a href="#Install-eslint-dependencies" class="headerlink" title="Install eslint dependencies"></a>Install eslint dependencies</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev \</span><br><span class="line">eslint \</span><br><span class="line">babel-eslint \</span><br><span class="line">eslint-config-airbnb \</span><br><span class="line">eslint-config-babel \</span><br><span class="line">eslint-config-prettier \</span><br><span class="line">eslint-plugin-import \</span><br><span class="line">eslint-plugin-react \</span><br><span class="line">prettier \</span><br><span class="line">eslint-plugin-prettier</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/21/Integrate-eslint-with-vscode/#more" rel="contents">
+                Read more ...
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://binarytellsnotales.com/2019/05/03/Code-Challenge-Conway-s-Game-of-Life/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1518,7 +1701,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
